@@ -13,6 +13,7 @@ __pycache__/
 # Tableau temp
 *.tbm
 ~*.twb
+*.twbr
 hyperd.log
 tableau/seed.backup.twb
 
