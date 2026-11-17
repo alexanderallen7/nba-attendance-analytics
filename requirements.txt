@@ -1,0 +1,6 @@
+# Pinned to the versions used for the published results (Python 3.14)
+pandas==3.0.3
+statsmodels==0.15.0
+pytest==9.0.3
+kagglehub==1.0.3          # dataset download (no Kaggle account needed for public datasets)
+tableauhyperapi==0.0.26963  # only needed to rebuild the packaged .twbx

@@ -1,0 +1,25 @@
+# Raw source data (2.2 GB Kaggle download; re-fetched via kagglehub)
+data/raw/
+
+# Rebuildable artifacts (scripts/build_db.py, scripts/package_twbx.py)
+data/processed/attendance.db
+data/processed/extract.hyper
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Tableau temp
+*.tbm
+~*.twb
+hyperd.log
+tableau/seed.backup.twb
+
+# Local working docs (not part of the public repo)
+PROJECT_CONTEXT.txt
+STATUS.md
+
+# OS
+Thumbs.db
+.DS_Store

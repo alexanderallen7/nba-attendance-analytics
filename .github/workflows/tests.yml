@@ -1,0 +1,25 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install pandas statsmodels pytest kagglehub
+      - name: Download source database (Kaggle, no auth needed)
+        run: python -c "import kagglehub, os; os.environ.setdefault('KAGGLEHUB_CACHE','data/raw/kagglehub'); import kagglehub; print(kagglehub.dataset_download('wyattowalsh/basketball'))"
+        env:
+          KAGGLEHUB_CACHE: data/raw/kagglehub
+      - name: Build extract
+        run: python scripts/build_db.py
+      - name: Run data-quality and leakage tests
+        run: python -m pytest tests -q

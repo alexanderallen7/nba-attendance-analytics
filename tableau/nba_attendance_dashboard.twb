@@ -1,0 +1,1186 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20263.26.1022.1645                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='2e1b2186e197bd8fa488c12870e95779eaebeea4ea1da0b7950d99877d45a76e' _.fcp.WorkbookFingerprinting.true...creator-author-id='2e1b2186e197bd8fa488c12870e95779eaebeea4ea1da0b7950d99877d45a76e' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='2e1b2186e197bd8fa488c12870e95779eaebeea4ea1da0b7950d99877d45a76e' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='2e1b2186e197bd8fa488c12870e95779eaebeea4ea1da0b7950d99877d45a76e' original-version='18.1' source-build='2026.3.0 (20263.26.1022.1645)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+  <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+    <aliases enabled='yes' />
+    <column caption='Select Team' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;HOU&quot;'>
+      <calculation class='tableau' formula='&quot;HOU&quot;' />
+      <members>
+      <member alias='Atlanta Hawks' value='&quot;ATL&quot;' />
+      <member alias='Brooklyn Nets' value='&quot;BKN&quot;' />
+      <member alias='Boston Celtics' value='&quot;BOS&quot;' />
+      <member alias='Charlotte Hornets' value='&quot;CHA&quot;' />
+      <member alias='Chicago Bulls' value='&quot;CHI&quot;' />
+      <member alias='Cleveland Cavaliers' value='&quot;CLE&quot;' />
+      <member alias='Dallas Mavericks' value='&quot;DAL&quot;' />
+      <member alias='Denver Nuggets' value='&quot;DEN&quot;' />
+      <member alias='Detroit Pistons' value='&quot;DET&quot;' />
+      <member alias='Golden State Warriors' value='&quot;GSW&quot;' />
+      <member alias='Houston Rockets' value='&quot;HOU&quot;' />
+      <member alias='Indiana Pacers' value='&quot;IND&quot;' />
+      <member alias='LA Clippers' value='&quot;LAC&quot;' />
+      <member alias='Los Angeles Lakers' value='&quot;LAL&quot;' />
+      <member alias='Memphis Grizzlies' value='&quot;MEM&quot;' />
+      <member alias='Miami Heat' value='&quot;MIA&quot;' />
+      <member alias='Milwaukee Bucks' value='&quot;MIL&quot;' />
+      <member alias='Minnesota Timberwolves' value='&quot;MIN&quot;' />
+      <member alias='New Orleans Pelicans' value='&quot;NOP&quot;' />
+      <member alias='New York Knicks' value='&quot;NYK&quot;' />
+      <member alias='Oklahoma City Thunder' value='&quot;OKC&quot;' />
+      <member alias='Orlando Magic' value='&quot;ORL&quot;' />
+      <member alias='Philadelphia 76ers' value='&quot;PHI&quot;' />
+      <member alias='Phoenix Suns' value='&quot;PHX&quot;' />
+      <member alias='Portland Trail Blazers' value='&quot;POR&quot;' />
+      <member alias='Sacramento Kings' value='&quot;SAC&quot;' />
+      <member alias='San Antonio Spurs' value='&quot;SAS&quot;' />
+      <member alias='Toronto Raptors' value='&quot;TOR&quot;' />
+      <member alias='Utah Jazz' value='&quot;UTA&quot;' />
+      <member alias='Washington Wizards' value='&quot;WAS&quot;' />
+      </members>
+    </column>
+  </datasource>
+    <datasource caption='extract' inline='true' name='federated.1pt6fmd1tboxmb1fpttad1kn09nl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='extract' name='textscan.1pxzcr301l0lae11057lc1hdzy3n'>
+            <connection class='textscan' directory='C:/Users/alexa/Downloads/nba-attendance-analytics/data/processed' filename='extract.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1pxzcr301l0lae11057lc1hdzy3n' name='extract.csv' table='[extract#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='game_id' ordinal='0' />
+            <column datatype='date' name='game_date' ordinal='1' />
+            <column datatype='string' name='season' ordinal='2' />
+            <column datatype='integer' name='season_start_year' ordinal='3' />
+            <column datatype='string' name='home_team' ordinal='4' />
+            <column datatype='string' name='away_team' ordinal='5' />
+            <column datatype='string' name='arena' ordinal='6' />
+            <column datatype='integer' name='attendance' ordinal='7' />
+            <column datatype='integer' name='capacity' ordinal='8' />
+            <column datatype='real' name='fill_rate' ordinal='9' />
+            <column datatype='real' name='fill_rate_raw' ordinal='10' />
+            <column datatype='integer' name='sellout_flag' ordinal='11' />
+            <column datatype='string' name='day_of_week' ordinal='12' />
+            <column datatype='integer' name='month' ordinal='13' />
+            <column datatype='real' name='home_win_pct_entering' ordinal='14' />
+            <column datatype='real' name='opp_win_pct_entering' ordinal='15' />
+            <column datatype='integer' name='home_back_to_back' ordinal='16' />
+            <column datatype='integer' name='excluded_flag' ordinal='17' />
+            <column datatype='string' name='excluded_reason' ordinal='18' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[game_id]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>game_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>game_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[game_date]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>game_date</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[season]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>season</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>season_start_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[season_start_year]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>season_start_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>home_team</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[away_team]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>away_team</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arena</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[arena]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>arena</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>attendance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[attendance]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>attendance</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>capacity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[capacity]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>capacity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fill_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fill_rate]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>fill_rate</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fill_rate_raw</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[fill_rate_raw]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>fill_rate_raw</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sellout_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[sellout_flag]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>sellout_flag</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[day_of_week]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>day_of_week</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_win_pct_entering</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[home_win_pct_entering]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>home_win_pct_entering</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>opp_win_pct_entering</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[opp_win_pct_entering]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>opp_win_pct_entering</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_back_to_back</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[home_back_to_back]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>home_back_to_back</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>excluded_flag</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[excluded_flag]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>excluded_flag</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>excluded_reason</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[excluded_reason]</local-name>
+            <parent-name>[extract.csv]</parent-name>
+            <remote-alias>excluded_reason</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[extract.csv_E02F911300B040E1BA8C28863C14DEC6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='extract.csv' datatype='table' name='[__tableau_internal_object_id__].[extract.csv_E02F911300B040E1BA8C28863C14DEC6]' role='measure' type='quantitative' />
+      <column caption='Arena' datatype='string' name='[arena]' role='dimension' type='nominal' />
+      <column caption='Attendance' datatype='integer' name='[attendance]' role='measure' type='quantitative' />
+      <column caption='Away Team' datatype='string' name='[away_team]' role='dimension' type='nominal' />
+      <column caption='Capacity' datatype='integer' name='[capacity]' role='measure' type='quantitative' />
+      <column caption='Day Of Week' datatype='string' name='[day_of_week]' role='dimension' type='nominal' />
+      <column caption='Excluded Flag' datatype='integer' name='[excluded_flag]' role='measure' type='quantitative' />
+      <column caption='Excluded Reason' datatype='string' name='[excluded_reason]' role='dimension' type='nominal' />
+      <column caption='Fill Rate' datatype='real' name='[fill_rate]' role='measure' type='quantitative' />
+      <column caption='Fill Rate Raw' datatype='real' name='[fill_rate_raw]' role='measure' type='quantitative' />
+      <column caption='Game Date' datatype='date' name='[game_date]' role='dimension' type='ordinal' />
+      <column caption='Game Id' datatype='integer' name='[game_id]' role='dimension' type='ordinal' />
+      <column caption='Home Back To Back' datatype='integer' name='[home_back_to_back]' role='measure' type='quantitative' />
+      <column caption='Home Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+      <column caption='Home Win Pct Entering' datatype='real' name='[home_win_pct_entering]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Opp Win Pct Entering' datatype='real' name='[opp_win_pct_entering]' role='measure' type='quantitative' />
+      <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+      <column caption='Season Start Year' datatype='integer' name='[season_start_year]' role='dimension' type='quantitative' />
+      <column caption='Sellout Flag' datatype='integer' name='[sellout_flag]' role='measure' type='quantitative' />
+      <column caption='Fill Rate (calc)' datatype='real' default-format='p0.0%' name='[Calculation_FillRateCalc]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[attendance] / [capacity]' />
+      </column>
+      <column caption='Included Fill Rate' datatype='real' default-format='p0.0%' name='[Calculation_IncludedFill]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [excluded_flag] = 0 THEN [fill_rate] END' />
+      </column>
+      <column caption='Team Avg Fill Rate (LOD)' datatype='real' default-format='p0.0%' name='[Calculation_TeamAvgLOD]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{ FIXED [home_team] : AVG([Calculation_IncludedFill]) }' />
+      </column>
+      <column caption='Sellout % (included games)' datatype='real' default-format='p0%' name='[Calculation_SelloutPct]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG(IF [excluded_flag] = 0 THEN [sellout_flag] END)' />
+      </column>
+      <column caption='League Avg Fill Rate' datatype='real' default-format='p0.0%' name='[Calculation_LeagueFill]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Calculation_IncludedFill])' />
+      </column>
+      <column caption='Selected Team Fill Rate' datatype='real' default-format='p0.0%' name='[Calculation_TeamFill]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG(IF [home_team] = [Parameters].[Parameter 1] THEN [Calculation_IncludedFill] END)' />
+      </column>
+      <column caption='Selected Team Sellout %' datatype='real' default-format='p0%' name='[Calculation_TeamSellout]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG(IF [home_team] = [Parameters].[Parameter 1] AND [excluded_flag] = 0 THEN [sellout_flag] END)' />
+      </column>
+      <column caption='Team vs League' datatype='string' name='[Calculation_Highlight]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [home_team] = [Parameters].[Parameter 1] THEN &quot;Selected team&quot; ELSE &quot;Other teams&quot; END' />
+      </column>
+      <column caption='Fill Rate YoY % (table calc)' datatype='real' default-format='p0.0%' name='[Calculation_YoY]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Calculation_IncludedFill]) / LOOKUP(AVG([Calculation_IncludedFill]), -1) - 1' />
+      </column>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='extract.csv' id='extract.csv_E02F911300B040E1BA8C28863C14DEC6'>
+            <properties context=''>
+              <relation connection='textscan.1pxzcr301l0lae11057lc1hdzy3n' name='extract.csv' table='[extract#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='game_id' ordinal='0' />
+                  <column datatype='date' name='game_date' ordinal='1' />
+                  <column datatype='string' name='season' ordinal='2' />
+                  <column datatype='integer' name='season_start_year' ordinal='3' />
+                  <column datatype='string' name='home_team' ordinal='4' />
+                  <column datatype='string' name='away_team' ordinal='5' />
+                  <column datatype='string' name='arena' ordinal='6' />
+                  <column datatype='integer' name='attendance' ordinal='7' />
+                  <column datatype='integer' name='capacity' ordinal='8' />
+                  <column datatype='real' name='fill_rate' ordinal='9' />
+                  <column datatype='real' name='fill_rate_raw' ordinal='10' />
+                  <column datatype='integer' name='sellout_flag' ordinal='11' />
+                  <column datatype='string' name='day_of_week' ordinal='12' />
+                  <column datatype='integer' name='month' ordinal='13' />
+                  <column datatype='real' name='home_win_pct_entering' ordinal='14' />
+                  <column datatype='real' name='opp_win_pct_entering' ordinal='15' />
+                  <column datatype='integer' name='home_back_to_back' ordinal='16' />
+                  <column datatype='integer' name='excluded_flag' ordinal='17' />
+                  <column datatype='string' name='excluded_reason' ordinal='18' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='KPI League Fill Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>LEAGUE AVG FILL RATE</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='extract' name='federated.1pt6fmd1tboxmb1fpttad1kn09nl' />
+          </datasources>
+      <datasource-dependencies datasource='federated.1pt6fmd1tboxmb1fpttad1kn09nl'>
+        <column caption='Fill Rate' datatype='real' name='[fill_rate]' role='measure' type='quantitative' />
+        <column caption='Excluded Flag' datatype='integer' name='[excluded_flag]' role='measure' type='quantitative' />
+        <column caption='Included Fill Rate' datatype='real' default-format='p0.0%' name='[Calculation_IncludedFill]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='IF [excluded_flag] = 0 THEN [fill_rate] END' />
+        </column>
+        <column caption='League Avg Fill Rate' datatype='real' default-format='p0.0%' name='[Calculation_LeagueFill]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='AVG([Calculation_IncludedFill])' />
+        </column>
+        <column-instance column='[Calculation_LeagueFill]' derivation='User' name='[usr:Calculation_LeagueFill:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <format attr='font-size' value='20' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[usr:Calculation_LeagueFill:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+      </table>
+      <simple-id uuid='{A1B2C3D4-0001-4000-9000-000000000001}' />
+    </worksheet>
+    <worksheet name='KPI Selected Team Fill Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>SELECTED TEAM FILL RATE</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='extract' name='federated.1pt6fmd1tboxmb1fpttad1kn09nl' />
+          </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Team' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;HOU&quot;'>
+          <calculation class='tableau' formula='&quot;HOU&quot;' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1pt6fmd1tboxmb1fpttad1kn09nl'>
+        <column caption='Fill Rate' datatype='real' name='[fill_rate]' role='measure' type='quantitative' />
+        <column caption='Excluded Flag' datatype='integer' name='[excluded_flag]' role='measure' type='quantitative' />
+        <column caption='Home Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+        <column caption='Included Fill Rate' datatype='real' default-format='p0.0%' name='[Calculation_IncludedFill]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='IF [excluded_flag] = 0 THEN [fill_rate] END' />
+        </column>
+        <column caption='Selected Team Fill Rate' datatype='real' default-format='p0.0%' name='[Calculation_TeamFill]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='AVG(IF [home_team] = [Parameters].[Parameter 1] THEN [Calculation_IncludedFill] END)' />
+        </column>
+        <column-instance column='[Calculation_TeamFill]' derivation='User' name='[usr:Calculation_TeamFill:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <format attr='font-size' value='20' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[usr:Calculation_TeamFill:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+      </table>
+      <simple-id uuid='{A1B2C3D4-0002-4000-9000-000000000002}' />
+    </worksheet>
+    <worksheet name='KPI Selected Team Sellout Pct'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>SELECTED TEAM SELLOUT %</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='extract' name='federated.1pt6fmd1tboxmb1fpttad1kn09nl' />
+          </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Team' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;HOU&quot;'>
+          <calculation class='tableau' formula='&quot;HOU&quot;' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1pt6fmd1tboxmb1fpttad1kn09nl'>
+        <column caption='Sellout Flag' datatype='integer' name='[sellout_flag]' role='measure' type='quantitative' />
+        <column caption='Excluded Flag' datatype='integer' name='[excluded_flag]' role='measure' type='quantitative' />
+        <column caption='Home Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+        <column caption='Selected Team Sellout %' datatype='real' default-format='p0%' name='[Calculation_TeamSellout]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='AVG(IF [home_team] = [Parameters].[Parameter 1] AND [excluded_flag] = 0 THEN [sellout_flag] END)' />
+        </column>
+        <column-instance column='[Calculation_TeamSellout]' derivation='User' name='[usr:Calculation_TeamSellout:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <format attr='font-size' value='20' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[usr:Calculation_TeamSellout:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+      </table>
+      <simple-id uuid='{A1B2C3D4-0003-4000-9000-000000000003}' />
+    </worksheet>
+    <worksheet name='Fill Rate by Team'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Average fill rate by home team, 2013-14 to 2022-23 &#8212; selected team in red</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='extract' name='federated.1pt6fmd1tboxmb1fpttad1kn09nl' />
+          </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Team' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;HOU&quot;'>
+          <calculation class='tableau' formula='&quot;HOU&quot;' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1pt6fmd1tboxmb1fpttad1kn09nl'>
+        <column caption='Home Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+        <column caption='Fill Rate' datatype='real' name='[fill_rate]' role='measure' type='quantitative' />
+        <column caption='Excluded Flag' datatype='integer' name='[excluded_flag]' role='measure' type='quantitative' />
+        <column caption='Included Fill Rate' datatype='real' default-format='p0.0%' name='[Calculation_IncludedFill]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='IF [excluded_flag] = 0 THEN [fill_rate] END' />
+        </column>
+        <column caption='Team vs League' datatype='string' name='[Calculation_Highlight]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF [home_team] = [Parameters].[Parameter 1] THEN &quot;Selected team&quot; ELSE &quot;Other teams&quot; END' />
+        </column>
+        <column-instance column='[home_team]' derivation='Attribute' name='[attr:home_team:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_Highlight]' derivation='None' name='[none:Calculation_Highlight:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_IncludedFill]' derivation='Avg' name='[avg:Calculation_IncludedFill:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[home_team]' derivation='None' name='[none:home_team:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+          <sort class='computed' column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:home_team:nk]' direction='DESC' using='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[avg:Calculation_IncludedFill:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[none:Calculation_Highlight:nk]' type='palette'>
+              <map to='#c8102e'>
+                <bucket>&quot;Selected team&quot;</bucket>
+              </map>
+              <map to='#b5b5b5'>
+                <bucket>&quot;Other teams&quot;</bucket>
+              </map>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:Calculation_Highlight:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:home_team:nk]</rows>
+        <cols>[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[avg:Calculation_IncludedFill:qk]</cols>
+      </table>
+      <simple-id uuid='{A1B2C3D4-0004-4000-9000-000000000004}' />
+    </worksheet>
+    <worksheet name='Fill Rate by Season'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Average fill rate by season &#8212; selected team vs all other teams. Gap = 2020-21 (COVID, excluded); 2019-20 is pre-bubble games only</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='extract' name='federated.1pt6fmd1tboxmb1fpttad1kn09nl' />
+          </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Team' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;HOU&quot;'>
+          <calculation class='tableau' formula='&quot;HOU&quot;' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1pt6fmd1tboxmb1fpttad1kn09nl'>
+        <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+        <column caption='Home Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+        <column caption='Fill Rate' datatype='real' name='[fill_rate]' role='measure' type='quantitative' />
+        <column caption='Excluded Flag' datatype='integer' name='[excluded_flag]' role='measure' type='quantitative' />
+        <column caption='Included Fill Rate' datatype='real' default-format='p0.0%' name='[Calculation_IncludedFill]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='IF [excluded_flag] = 0 THEN [fill_rate] END' />
+        </column>
+        <column caption='Team vs League' datatype='string' name='[Calculation_Highlight]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF [home_team] = [Parameters].[Parameter 1] THEN &quot;Selected team&quot; ELSE &quot;Other teams&quot; END' />
+        </column>
+        <column-instance column='[Calculation_Highlight]' derivation='None' name='[none:Calculation_Highlight:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_IncludedFill]' derivation='Avg' name='[avg:Calculation_IncludedFill:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[season]' derivation='None' name='[none:season:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[none:Calculation_Highlight:nk]' type='palette'>
+              <map to='#c8102e'>
+                <bucket>&quot;Selected team&quot;</bucket>
+              </map>
+              <map to='#b5b5b5'>
+                <bucket>&quot;Other teams&quot;</bucket>
+              </map>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:Calculation_Highlight:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[avg:Calculation_IncludedFill:qk]</rows>
+        <cols>[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:season:nk]</cols>
+      </table>
+      <simple-id uuid='{A1B2C3D4-0005-4000-9000-000000000005}' />
+    </worksheet>
+    <worksheet name='Weekday Month Heatmap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Average fill rate by day of week and month (Oct&#8211;Apr, season order)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='extract' name='federated.1pt6fmd1tboxmb1fpttad1kn09nl' />
+          </datasources>
+      <datasource-dependencies datasource='federated.1pt6fmd1tboxmb1fpttad1kn09nl'>
+        <column caption='Day Of Week' datatype='string' name='[day_of_week]' role='dimension' type='nominal' />
+        <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+        <column caption='Fill Rate' datatype='real' name='[fill_rate]' role='measure' type='quantitative' />
+        <column caption='Excluded Flag' datatype='integer' name='[excluded_flag]' role='measure' type='quantitative' />
+        <column caption='Included Fill Rate' datatype='real' default-format='p0.0%' name='[Calculation_IncludedFill]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='IF [excluded_flag] = 0 THEN [fill_rate] END' />
+        </column>
+        <column-instance column='[Calculation_IncludedFill]' derivation='Avg' name='[avg:Calculation_IncludedFill:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[day_of_week]' derivation='None' name='[none:day_of_week:nk]' pivot='key' type='nominal' />
+        <column-instance column='[month]' derivation='None' name='[none:month:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+          <sort class='manual' column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:day_of_week:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Mon&quot;</bucket>
+              <bucket>&quot;Tue&quot;</bucket>
+              <bucket>&quot;Wed&quot;</bucket>
+              <bucket>&quot;Thu&quot;</bucket>
+              <bucket>&quot;Fri&quot;</bucket>
+              <bucket>&quot;Sat&quot;</bucket>
+              <bucket>&quot;Sun&quot;</bucket>
+            </dictionary>
+          </sort>
+          <sort class='manual' column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:month:ok]' direction='ASC'>
+            <dictionary>
+              <bucket>10</bucket>
+              <bucket>11</bucket>
+              <bucket>12</bucket>
+              <bucket>1</bucket>
+              <bucket>2</bucket>
+              <bucket>3</bucket>
+              <bucket>4</bucket>
+            </dictionary>
+          </sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[avg:Calculation_IncludedFill:qk]' />
+              <text column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[avg:Calculation_IncludedFill:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:day_of_week:nk]</rows>
+        <cols>[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:month:ok]</cols>
+      </table>
+      <simple-id uuid='{A1B2C3D4-0006-4000-9000-000000000006}' />
+    </worksheet>
+    <worksheet name='Win Pct vs Fill Rate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Each dot is one team-season: average win % entering games vs average fill rate</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='extract' name='federated.1pt6fmd1tboxmb1fpttad1kn09nl' />
+          </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Team' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;HOU&quot;'>
+          <calculation class='tableau' formula='&quot;HOU&quot;' />
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1pt6fmd1tboxmb1fpttad1kn09nl'>
+        <column caption='Home Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+        <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+        <column caption='Home Win Pct Entering' datatype='real' name='[home_win_pct_entering]' role='measure' type='quantitative' />
+        <column caption='Fill Rate' datatype='real' name='[fill_rate]' role='measure' type='quantitative' />
+        <column caption='Excluded Flag' datatype='integer' name='[excluded_flag]' role='measure' type='quantitative' />
+        <column caption='Included Fill Rate' datatype='real' default-format='p0.0%' name='[Calculation_IncludedFill]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='IF [excluded_flag] = 0 THEN [fill_rate] END' />
+        </column>
+        <column caption='Team vs League' datatype='string' name='[Calculation_Highlight]' role='dimension' type='nominal'>
+          <calculation class='tableau' formula='IF [home_team] = [Parameters].[Parameter 1] THEN &quot;Selected team&quot; ELSE &quot;Other teams&quot; END' />
+        </column>
+        <column-instance column='[Calculation_Highlight]' derivation='None' name='[none:Calculation_Highlight:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Calculation_IncludedFill]' derivation='Avg' name='[avg:Calculation_IncludedFill:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[home_win_pct_entering]' derivation='Avg' name='[avg:home_win_pct_entering:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[home_team]' derivation='None' name='[none:home_team:nk]' pivot='key' type='nominal' />
+        <column-instance column='[season]' derivation='None' name='[none:season:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[none:Calculation_Highlight:nk]' type='palette'>
+              <map to='#c8102e'>
+                <bucket>&quot;Selected team&quot;</bucket>
+              </map>
+              <map to='#b5b5b5'>
+                <bucket>&quot;Other teams&quot;</bucket>
+              </map>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:Calculation_Highlight:nk]' />
+              <lod column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:home_team:nk]' />
+              <lod column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:season:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[avg:Calculation_IncludedFill:qk]</rows>
+        <cols>[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[avg:home_win_pct_entering:qk]</cols>
+      </table>
+      <simple-id uuid='{A1B2C3D4-0007-4000-9000-000000000007}' />
+    </worksheet>
+    <worksheet name='Fill Rate YoY Change'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>League average fill rate &#8212; change vs previous season (2021-22 compares to 2019-20; 2020-21 excluded, COVID)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='extract' name='federated.1pt6fmd1tboxmb1fpttad1kn09nl' />
+          </datasources>
+      <datasource-dependencies datasource='federated.1pt6fmd1tboxmb1fpttad1kn09nl'>
+        <column caption='Season' datatype='string' name='[season]' role='dimension' type='nominal' />
+        <column caption='Fill Rate' datatype='real' name='[fill_rate]' role='measure' type='quantitative' />
+        <column caption='Excluded Flag' datatype='integer' name='[excluded_flag]' role='measure' type='quantitative' />
+        <column caption='Included Fill Rate' datatype='real' default-format='p0.0%' name='[Calculation_IncludedFill]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='IF [excluded_flag] = 0 THEN [fill_rate] END' />
+        </column>
+        <column caption='Fill Rate YoY % (table calc)' datatype='real' default-format='p0.0%' name='[Calculation_YoY]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='AVG([Calculation_IncludedFill]) / LOOKUP(AVG([Calculation_IncludedFill]), -1) - 1' />
+        </column>
+        <column-instance column='[Calculation_YoY]' derivation='User' name='[usr:Calculation_YoY:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[season]' derivation='None' name='[none:season:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:season:nk]'>
+            <groupfilter function='except'>
+              <groupfilter function='level-members' level='[none:season:nk]' />
+              <groupfilter function='member' level='[none:season:nk]' member='&quot;2020-21&quot;' />
+            </groupfilter>
+          </filter>
+          <aggregation value='true' />
+        </view>
+        <style>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+        </panes>
+        <rows>[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[usr:Calculation_YoY:qk]</rows>
+        <cols>[federated.1pt6fmd1tboxmb1fpttad1kn09nl].[none:season:nk]</cols>
+      </table>
+      <simple-id uuid='{A1B2C3D4-0008-4000-9000-000000000008}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='NBA Home Attendance'>
+      <style />
+      <size maxheight='900' maxwidth='1100' minheight='900' minwidth='1100' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='1' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='7000' id='2' type-v2='text' w='100000' x='0' y='0'>
+            <formatted-text>
+              <run bold='true' fontsize='16'>What drives NBA home attendance?</run>
+              <run fontcolor='#666666' fontsize='10'>&#10;Regular seasons 2013-14 to 2022-23 &#183; pick a team with the Select Team control &#183; associations only, not causal estimates</run>
+            </formatted-text>
+          </zone>
+          <zone h='12000' id='4' name='KPI League Fill Rate' show-title='true' w='22000' x='0' y='7000'>
+            <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+            <zone-style>
+              <format attr='margin' value='6' />
+            </zone-style>
+          </zone>
+          <zone h='12000' id='5' name='KPI Selected Team Fill Rate' show-title='true' w='22000' x='22000' y='7000'>
+            <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+            <zone-style>
+              <format attr='margin' value='6' />
+            </zone-style>
+          </zone>
+          <zone h='12000' id='6' name='KPI Selected Team Sellout Pct' show-title='true' w='22000' x='44000' y='7000'>
+            <layout-cache cell-count-w='1' type-h='fixed' type-w='cell' />
+            <zone-style>
+              <format attr='margin' value='6' />
+            </zone-style>
+          </zone>
+          <zone h='12000' id='7' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='34000' x='66000' y='7000'>
+            <zone-style>
+              <format attr='margin' value='6' />
+            </zone-style>
+          </zone>
+          <zone h='37000' id='9' name='Fill Rate by Team' w='50000' x='0' y='19000'>
+            <zone-style>
+              <format attr='margin' value='6' />
+            </zone-style>
+          </zone>
+          <zone h='37000' id='10' name='Fill Rate by Season' w='50000' x='50000' y='19000'>
+            <zone-style>
+              <format attr='margin' value='6' />
+            </zone-style>
+          </zone>
+          <zone h='37000' id='12' name='Weekday Month Heatmap' w='50000' x='0' y='56000'>
+            <zone-style>
+              <format attr='margin' value='6' />
+            </zone-style>
+          </zone>
+          <zone h='37000' id='13' name='Win Pct vs Fill Rate' w='50000' x='50000' y='56000'>
+            <zone-style>
+              <format attr='margin' value='6' />
+            </zone-style>
+          </zone>
+          <zone h='7000' id='15' type-v2='text' w='100000' x='0' y='93000'>
+            <formatted-text>
+              <run bold='true' fontsize='9'>How to read this: </run>
+              <run fontsize='9'>Fill rate = reported attendance &#247; listed arena capacity, capped at 100%. Sellout = attendance at or above listed capacity. Win % entering = team record over that season&#8217;s earlier games only. Excluded: 2019-20 bubble games, all of 2020-21 (COVID), and international/alternate-venue games. Attendance is team-reported (tickets distributed, not turnstile counts). Sources: Kaggle NBA Database (wyattowalsh); arena capacities from Wikipedia, cited per row in the repo. Associations only &#8212; not causal estimates.</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='margin' value='8' />
+            </zone-style>
+          </zone>
+        </zone>
+      </zones>
+      <simple-id uuid='{A1B2C3D4-0009-4000-9000-000000000009}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='KPI League Fill Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A1B2C3D4-0100-4000-9000-000000000100}' />
+    </window>
+    <window class='worksheet' name='KPI Selected Team Fill Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A1B2C3D4-0100-4000-9000-000000000101}' />
+    </window>
+    <window class='worksheet' name='KPI Selected Team Sellout Pct'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A1B2C3D4-0100-4000-9000-000000000102}' />
+    </window>
+    <window class='worksheet' name='Fill Rate by Team'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A1B2C3D4-0100-4000-9000-000000000103}' />
+    </window>
+    <window class='worksheet' name='Fill Rate by Season'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A1B2C3D4-0100-4000-9000-000000000104}' />
+    </window>
+    <window class='worksheet' name='Weekday Month Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A1B2C3D4-0100-4000-9000-000000000105}' />
+    </window>
+    <window class='worksheet' name='Win Pct vs Fill Rate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A1B2C3D4-0100-4000-9000-000000000106}' />
+    </window>
+    <window class='worksheet' name='Fill Rate YoY Change'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A1B2C3D4-0100-4000-9000-000000000107}' />
+    </window>
+    <window class='dashboard' maximized='true' name='NBA Home Attendance'>
+      <viewpoints>
+        <viewpoint name='KPI League Fill Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Selected Team Fill Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI Selected Team Sellout Pct'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fill Rate by Team'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Fill Rate by Season'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Weekday Month Heatmap'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Win Pct vs Fill Rate'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='1' />
+      <simple-id uuid='{A1B2C3D4-0010-4000-9000-000000000010}' />
+    </window>
+  </windows>
+</workbook>

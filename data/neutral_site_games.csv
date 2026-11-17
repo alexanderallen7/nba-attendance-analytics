@@ -1,0 +1,21 @@
+game_id,game_date,home_team,away_team,venue,city,reason,source_url
+0021300579,2014-01-16,ATL,BKN,The O2 Arena,London,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021400117,2014-11-12,MIN,HOU,Mexico City Arena,Mexico City,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021400585,2015-01-15,MIL,NYK,The O2 Arena,London,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021500282,2015-12-03,SAC,BOS,Mexico City Arena,Mexico City,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021500588,2016-01-14,ORL,TOR,The O2 Arena,London,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021600589,2017-01-12,DEN,IND,The O2 Arena,London,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021600591,2017-01-12,PHX,DAL,Mexico City Arena,Mexico City,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021600605,2017-01-14,PHX,SAS,Mexico City Arena,Mexico City,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021700365,2017-12-07,BKN,OKC,Mexico City Arena,Mexico City,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021700376,2017-12-09,BKN,MIA,Mexico City Arena,Mexico City,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021700614,2018-01-11,PHI,BOS,The O2 Arena,London,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021800418,2018-12-13,ORL,CHI,Mexico City Arena,Mexico City,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021800429,2018-12-15,ORL,UTA,Mexico City Arena,Mexico City,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021800665,2019-01-17,WAS,NYK,The O2 Arena,London,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021900369,2019-12-12,DET,DAL,Mexico City Arena,Mexico City,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021900380,2019-12-14,PHX,SAS,Mexico City Arena,Mexico City,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0021900669,2020-01-24,CHA,MIL,Accor Arena,Paris,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0022200439,2022-12-17,SAS,MIA,Mexico City Arena,Mexico City,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0022200678,2023-01-19,DET,CHI,Accor Arena,Paris,international_game,https://en.wikipedia.org/wiki/NBA_Global_Games
+0022200635,2023-01-13,SAS,GSW,Alamodome,San Antonio,alternate_venue,https://en.wikipedia.org/wiki/Alamodome
